@@ -1,0 +1,43 @@
+.RoadmapTitle {
+  font-family: "Alata", sans-serif;
+  font-size: calc(0.8em * var(--text-multiplier)) !important;
+  text-align: center;
+  -webkit-text-stroke: 1px #6e6e6e;
+  text-shadow: #996515 1px 1px 4px;
+  margin-top: 5vh;
+}
+
+.Date {
+  font-family: "Alata", sans-serif;
+  background-color: white;
+  font-size: calc(0.5rem * var(--text-multiplier)) !important;
+  width: auto !important;
+  padding: 1vh !important;
+  border-radius: 10px;
+  border: 2px solid #daa520;
+  color: #daa520;
+  opacity: 0.85 !important;
+}
+
+.VerticalTimeLine {
+  padding-top: 5em !important;
+}
+
+.RoadmapText {
+  background-color: #6e6e6e !important;
+  border-radius: 10px;
+  border: 3px solid #daa520;
+  box-shadow: none;
+  color: #e0e0e0 !important;
+}
+
+.RoadmapText > ul {
+  list-style: none;
+  font-family: "Patrick Hand", cursive;
+  font-size: calc(0.35rem * var(--text-multiplier)) !important;
+}
+
+.Icon {
+  background: #daa520;
+  color: purple;
+}

@@ -1,0 +1,15 @@
+.tokenomicsTitle {
+  font-family: "Alata", sans-serif;
+  font-size: calc(0.8em * var(--text-multiplier)) !important;
+  text-align: center;
+  -webkit-text-stroke: 1px #6e6e6e;
+  text-shadow: #996515 1px 1px 4px;
+  margin-bottom: 4vh;
+}
+
+.tokenomicsCardTitle {
+  font-size: calc(0.7rem * var(--text-multiplier));
+  text-align: center;
+  text-shadow: #6e6e6e 1px 1px 2px;
+  -webkit-text-stroke: 1px #996515;
+}
