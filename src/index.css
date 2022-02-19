@@ -28,13 +28,13 @@
 
 @media (min-width: 1200px) {
   :root {
-    --text-multiplier: 4;
+    --text-multiplier: 5;
   }
 }
 
 @media (min-width: 1920px) {
   :root {
-    --text-multiplier: 5;
+    --text-multiplier: 6;
   }
 }
 
