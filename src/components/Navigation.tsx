@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
+import { Telegram, Twitter } from "react-bootstrap-icons";
 import styles from "./Navigation.module.css";
 
 const Navigation = () => {
@@ -31,14 +32,14 @@ const Navigation = () => {
               target="_blank"
               className={styles.NavbarLink}
             >
-              Telegram
+              <Telegram className={styles.Icon} />
             </Nav.Link>
             <Nav.Link
               href="https://twitter.com/PadloMoon"
               target="_blank"
               className={styles.NavbarLink}
             >
-              Twitter
+              <Twitter className={styles.Icon} />
             </Nav.Link>
             {/* <Nav.Link
               href="https://www.reddit.com/user/PadloMoon"

@@ -30,7 +30,7 @@ function App() {
             </p>
             <p>
               Padlo was found when team of individuals wanted to launch first
-              token from CrowFi's launchpad. Time was limited, but we hold a
+              token from CrowFi's launchpad. Time was limited, but we held a
               short presale and launched PadloMoon successfully. We didn't had
               any actual plans before launch but when launch went well with over
               2200% gains in the first 24h we realized that we have a gem in our
