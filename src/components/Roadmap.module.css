@@ -36,7 +36,7 @@
 .RoadmapText > ul {
   list-style: none;
   font-family: "Patrick Hand", cursive;
-  font-size: calc(0.45rem * var(--text-multiplier)) !important;
+  font-size: calc(0.55rem * var(--text-multiplier)) !important;
 }
 
 .Icon {
