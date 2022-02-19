@@ -21,6 +21,7 @@
 
 .VerticalTimeLine {
   padding-top: 5em !important;
+  margin-bottom: 30vh;
 }
 
 .RoadmapText {
@@ -29,6 +30,7 @@
   border: 3px solid #daa520;
   box-shadow: none;
   color: #e0e0e0 !important;
+  opacity: 0.85;
 }
 
 .RoadmapText > ul {
