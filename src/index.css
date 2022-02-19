@@ -22,19 +22,19 @@
 
 @media (min-width: 1024px) {
   :root {
-    --text-multiplier: 3.5;
+    --text-multiplier: 3;
   }
 }
 
 @media (min-width: 1200px) {
   :root {
-    --text-multiplier: 5;
+    --text-multiplier: 4;
   }
 }
 
 @media (min-width: 1920px) {
   :root {
-    --text-multiplier: 6;
+    --text-multiplier: 5;
   }
 }
 

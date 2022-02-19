@@ -14,12 +14,12 @@
   border: 2px solid #daa520;
   color: #daa520;
   font-family: "Patrick Hand", cursive;
-  font-size: calc(0.6em * var(--text-multiplier));
+  font-size: calc(0.7em * var(--text-multiplier));
 }
 
 .logoTitle {
   font-family: "Limelight", cursive;
-  font-size: calc(1.9em * var(--text-multiplier));
+  font-size: calc(1.8em * var(--text-multiplier));
   text-shadow: #daa520 0px 5px 15px;
   text-align: center;
   margin: auto;

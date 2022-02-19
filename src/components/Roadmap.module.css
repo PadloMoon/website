@@ -10,7 +10,7 @@
 .Date {
   font-family: "Alata", sans-serif;
   background-color: white;
-  font-size: calc(0.5rem * var(--text-multiplier)) !important;
+  font-size: calc(0.6rem * var(--text-multiplier)) !important;
   width: auto !important;
   padding: 1vh !important;
   border-radius: 10px;
@@ -36,10 +36,9 @@
 .RoadmapText > ul {
   list-style: none;
   font-family: "Patrick Hand", cursive;
-  font-size: calc(0.35rem * var(--text-multiplier)) !important;
+  font-size: calc(0.45rem * var(--text-multiplier)) !important;
 }
 
 .Icon {
   background: #daa520;
-  color: purple;
 }
