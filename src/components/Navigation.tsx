@@ -30,6 +30,7 @@ const Navigation = () => {
             <Nav.Link
               href="https://t.me/PADLOmoon"
               target="_blank"
+              rel="noreferrer"
               className={styles.NavbarLink}
             >
               <Telegram className={styles.Icon} />
@@ -37,6 +38,7 @@ const Navigation = () => {
             <Nav.Link
               href="https://twitter.com/PadloMoon"
               target="_blank"
+              rel="noreferrer"
               className={styles.NavbarLink}
             >
               <Twitter className={styles.Icon} />

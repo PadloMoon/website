@@ -1,0 +1,18 @@
+.Footer {
+  background-color: #6e6e6e;
+  border-top: 0.3vh solid #daa520;
+  height: 5vh;
+  font-family: "Alata", sans-serif;
+  color: #daa520;
+  line-height: 5vh;
+  font-size: calc(0.2em * var(--text-multiplier));
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Footer > div > a {
+  text-decoration: none;
+  color: #daa520;
+  margin-left: 1px;
+}

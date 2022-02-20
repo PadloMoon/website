@@ -6,6 +6,7 @@ import Roadmap from "./components/Roadmap";
 import classNames from "classnames";
 import Tokenomics from "./components/Tokenomics";
 import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
         <a id="roadmap" />
         <Roadmap className={styles.commonElement} />
       </Container>
+      <Footer />
     </>
   );
 }
