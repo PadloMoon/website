@@ -8,6 +8,12 @@
   max-width: calc(10em * var(--text-multiplier));
 }
 
+@media (min-width: 1080px) {
+  .logo {
+    max-width: 50%;
+  }
+}
+
 .commonElement {
   background-color: #faf9f5;
   border-radius: 10px;
@@ -25,6 +31,12 @@
   text-align: center;
   margin: auto;
   -webkit-text-stroke: 1px #6e6e6e;
+}
+
+@media (min-width: 768px) {
+  .logoTitle {
+    font-size: calc(2.5em * var(--text-multiplier));
+  }
 }
 
 .about {

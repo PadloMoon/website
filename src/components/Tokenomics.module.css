@@ -1,3 +1,7 @@
+.Card {
+  margin-bottom: 10vh;
+}
+
 .tokenomicsTitle {
   font-family: "Alata", sans-serif;
   font-size: calc(0.8em * var(--text-multiplier)) !important;

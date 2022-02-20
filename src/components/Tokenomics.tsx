@@ -22,7 +22,7 @@ const Tokenomics = ({ className }: Props) => {
       </Row>
       <Row>
         <Col>
-          <Card className={className}>
+          <Card className={classNames(className, styles.Card)}>
             <Card.Body>
               <Card.Title className={classNames(styles.tokenomicsCardTitle)}>
                 1% Reward

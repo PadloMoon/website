@@ -12,6 +12,9 @@ const Navigation = () => {
       className={styles.NavbarCustom}
     >
       <Container>
+        <Navbar.Brand href="#" className={styles.Brand}>
+          PadloMoon
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" navbarScroll>

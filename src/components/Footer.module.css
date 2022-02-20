@@ -5,7 +5,7 @@
   font-family: "Alata", sans-serif;
   color: #daa520;
   line-height: 5vh;
-  font-size: calc(0.2em * var(--text-multiplier));
+  font-size: calc(0.25em * var(--text-multiplier));
   display: flex;
   flex-direction: row;
   justify-content: space-between;
