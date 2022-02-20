@@ -23,7 +23,7 @@
 
 .Brand {
   font-family: "Limelight", cursive;
-  font-size: calc(0.5em * var(--text-multiplier));
+  font-size: calc(0.55em * var(--text-multiplier));
   color: #daa520 !important;
 }
 
