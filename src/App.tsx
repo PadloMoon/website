@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Navbar, Nav, Image, Card } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import styles from "./App.module.css";
 import logo from "./assets/images/Padlologo_new_transparent.png";
 import Roadmap from "./components/Roadmap";
@@ -12,6 +12,7 @@ function App() {
   return (
     <>
       <Container fluid="lg" className={styles.Container}>
+        {/* eslint-disable-next-line */}
         <a id="home" />
         <Navigation />
         <Row className="justify-content-md-center">
@@ -20,6 +21,7 @@ function App() {
         <Row>
           <div className={styles.logoTitle}>PadloMoon</div>
         </Row>
+        {/* eslint-disable-next-line */}
         <a id="about" />
         <Row>
           <Col className={classNames(styles.about, styles.commonElement)}>
@@ -40,8 +42,10 @@ function App() {
             </p>
           </Col>
         </Row>
+        {/* eslint-disable-next-line */}
         <a id="tokenomics" />
         <Tokenomics className={styles.commonElement} />
+        {/* eslint-disable-next-line */}
         <a id="roadmap" />
         <Roadmap className={styles.commonElement} />
       </Container>
