@@ -54,8 +54,9 @@ const Tokenomics = ({ className }: Props) => {
                 3% Treasury
               </Card.Title>
               <Card.Text>
-                We need some funds, like marketing to reach the moon. We're
-                always looking for ways to grow community.
+                We need some funds, for example for marketing to get more
+                friends for Padlo. We're always looking for ways to grow this
+                great community!
               </Card.Text>
             </Card.Body>
           </Card>
