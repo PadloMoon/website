@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { Telegram, Twitter } from "react-bootstrap-icons";
 import styles from "./Navigation.module.css";
@@ -46,13 +47,9 @@ const Navigation = () => {
             >
               <Twitter className={styles.Icon} />
             </Nav.Link>
-            {/* <Nav.Link
-              href="https://www.reddit.com/user/PadloMoon"
-              target="_blank"
-              className={styles.NavbarLink}
-            >
-              Reddit
-            </Nav.Link> */}
+            <Nav.Link as={Link} to="/earn" className={styles.NavbarLink}>
+              Earn
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
