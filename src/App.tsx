@@ -26,19 +26,11 @@ function App() {
         <Row>
           <Col className={classNames(styles.about, styles.commonElement)}>
             <p>
-              Meet Padlo, the most feared gangster in 1920's. His token was the
-              first ever launched from CrowFi launchpad! Later on you will be
-              introduced with his amazing NFT collection and perhaps few other
-              great utilities as well!
-            </p>
-            <p>
-              Padlo was found when team of individuals wanted to launch first
-              token from CrowFi's launchpad. Time was limited, but we held a
-              short presale and launched PadloMoon successfully. We didn't had
-              any actual plans before launch but when launch went well with over
-              2200% gains in the first 24h we realized that we have a gem in our
-              hands. Now we're working hard to bring our community more things
-              to enjoy while traveling to moon!
+              Meet Padlo, 1920´s Gangster-type gentleman, who launched token
+              named after him, first ever on Crow Finance launchpad. Padlo
+              rewards his holders with PDM token from every transaction. Later
+              on you will be introduced with his amazing NFT collection and
+              perhaps few other great utilities as well!
             </p>
           </Col>
         </Row>
