@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import * as React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { Telegram, Twitter } from "react-bootstrap-icons";
@@ -34,7 +35,7 @@ const Navigation = () => {
               href="https://t.me/PADLOmoon"
               target="_blank"
               rel="noreferrer"
-              className={styles.NavbarLink}
+              className={classNames(styles.NavbarLink, styles.NavbarIcon)}
             >
               <Telegram className={styles.Icon} />
             </Nav.Link>
@@ -42,7 +43,7 @@ const Navigation = () => {
               href="https://twitter.com/PadloMoon"
               target="_blank"
               rel="noreferrer"
-              className={styles.NavbarLink}
+              className={classNames(styles.NavbarLink, styles.NavbarIcon)}
             >
               <Twitter className={styles.Icon} />
             </Nav.Link>
