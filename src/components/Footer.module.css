@@ -1,18 +1,30 @@
 .Footer {
   background-color: #6e6e6e;
   border-top: 0.3vh solid #daa520;
-  height: 5vh;
+  height: calc(3vh * var(--text-multiplier));
   font-family: "Alata", sans-serif;
   color: #daa520;
-  line-height: 5vh;
-  font-size: calc(0.25em * var(--text-multiplier));
+  font-size: calc(0.3em * var(--text-multiplier));
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 1vh;
 }
 
-.Footer > div > a {
+.Links {
+  display: flex;
+  flex-direction: row;
+  margin: 0 1vw;
+}
+
+.Links > div {
+  padding-left: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.Links > div > a {
   text-decoration: none;
   color: #daa520;
-  margin-left: 1px;
 }
