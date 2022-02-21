@@ -15,8 +15,12 @@ type Props = {
 const Roadmap = ({ className }: Props) => {
   return (
     <>
-      <Row className="justify-content-md-center">
-        <Col xs lg="6" className={classNames(className, styles.RoadmapTitle)}>
+      <Row className="justify-content-center">
+        <Col
+          xs={10}
+          lg={6}
+          className={classNames(className, styles.RoadmapTitle)}
+        >
           Roadmap
         </Col>
       </Row>
@@ -33,6 +37,11 @@ const Roadmap = ({ className }: Props) => {
             <li>
               <span style={{ textDecoration: "line-through" }}>
                 Presale & Launch
+              </span>
+            </li>
+            <li>
+              <span style={{ textDecoration: "line-through" }}>
+                DEX listing
               </span>
             </li>
             <li>200 holders</li>

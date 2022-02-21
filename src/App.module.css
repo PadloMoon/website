@@ -1,4 +1,12 @@
 .Container {
+  background: repeating-linear-gradient(
+    to right,
+    #828282,
+    #828282 30px,
+    #e0e0e0 30px,
+    #e0e0e0 60px
+  );
+  box-shadow: 0px 0px 8px 2px rgb(59, 59, 59);
   color: white;
 }
 
@@ -41,5 +49,5 @@
 
 .about {
   padding: 2vh;
-  margin: 13vh 0 7vh;
+  margin: 4vh 0 7vh;
 }

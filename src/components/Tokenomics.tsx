@@ -11,10 +11,11 @@ type Props = {
 const Tokenomics = ({ className }: Props) => {
   return (
     <>
-      <Row className="justify-content-md-center">
+      <Row className="justify-content-center">
         <Col
-          xs
-          lg="6"
+          xs={10}
+          md={8}
+          lg={6}
           className={classNames(className, styles.tokenomicsTitle)}
         >
           Tokenomics

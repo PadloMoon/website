@@ -15,7 +15,7 @@ function App() {
         {/* eslint-disable-next-line */}
         <a id="home" />
         <Navigation />
-        <Row className="justify-content-md-center">
+        <Row className="justify-content-center">
           <Image src={logo} fluid alt="padlo logo" className={styles.logo} />
         </Row>
         <Row>
@@ -23,8 +23,11 @@ function App() {
         </Row>
         {/* eslint-disable-next-line */}
         <a id="about" />
-        <Row>
-          <Col className={classNames(styles.about, styles.commonElement)}>
+        <Row className="justify-content-center">
+          <Col
+            lg="10"
+            className={classNames(styles.about, styles.commonElement)}
+          >
             <p>
               Meet Padlo, 1920´s Gangster-type gentleman, who launched token
               named after him, first ever on Crow Finance launchpad. Padlo
