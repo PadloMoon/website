@@ -10,7 +10,7 @@
 .Date {
   font-family: "Alata", sans-serif;
   background-color: white;
-  font-size: calc(0.6rem * var(--text-multiplier)) !important;
+  font-size: calc(0.45rem * var(--text-multiplier)) !important;
   width: auto !important;
   padding: 1vh !important;
   border-radius: 10px;
@@ -21,7 +21,6 @@
 
 .VerticalTimeLine {
   padding-top: 5em !important;
-  margin-bottom: 30vh;
 }
 
 .RoadmapText {
@@ -40,5 +39,13 @@
 }
 
 .Icon {
-  background: #daa520;
+  background: #6c7a89;
+  box-shadow: 0 0 0 4px #daa520;
+}
+
+.Icon > svg {
+  width: calc(0.6em * var(--text-multiplier)) !important;
+  height: calc(0.6em * var(--text-multiplier)) !important;
+  margin-left: calc(-0.3em * var(--text-multiplier)) !important;
+  margin-top: calc(-0.3em * var(--text-multiplier)) !important;
 }

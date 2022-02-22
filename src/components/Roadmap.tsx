@@ -4,8 +4,14 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
 import { Row, Col } from "react-bootstrap";
+import { BiLock, BiRocket } from "react-icons/bi";
+import { RiStarLine } from "react-icons/ri";
+import { HiCurrencyDollar, HiFire } from "react-icons/hi";
+import { AiTwotoneThunderbolt } from "react-icons/ai";
+import { FaChartLine } from "react-icons/fa";
+
+import "react-vertical-timeline-component/style.min.css";
 import styles from "./Roadmap.module.css";
 
 type Props = {
@@ -32,6 +38,7 @@ const Roadmap = ({ className }: Props) => {
           contentArrowStyle={{ borderRight: "1vh solid  #daa520" }}
           date="Q1/2022"
           iconClassName={styles.Icon}
+          icon={<BiRocket color="#e0e0e0" size={48} />}
         >
           <ul>
             <li>
@@ -57,6 +64,7 @@ const Roadmap = ({ className }: Props) => {
           dateClassName={styles.Date}
           textClassName={styles.RoadmapText}
           iconClassName={styles.Icon}
+          icon={<HiCurrencyDollar color="#e0e0e0" size={36} />}
           contentArrowStyle={{ borderRight: "1vh solid  #daa520" }}
         >
           <ul>
@@ -71,13 +79,44 @@ const Roadmap = ({ className }: Props) => {
           dateClassName={styles.Date}
           textClassName={styles.RoadmapText}
           iconClassName={styles.Icon}
+          icon={<HiFire color="#e0e0e0" size={36} />}
           contentArrowStyle={{ borderRight: "1vh solid  #daa520" }}
         >
           <ul>
             <li>1500 holders</li>
             <li>CEX listing</li>
+            <li>
+              <BiLock color="#e0e0e0" size={48} />
+            </li>
           </ul>
         </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="Q4/2022"
+          dateClassName={styles.Date}
+          textClassName={styles.RoadmapText}
+          iconClassName={styles.Icon}
+          icon={<AiTwotoneThunderbolt color="#e0e0e0" size={36} />}
+          contentArrowStyle={{ borderRight: "1vh solid  #daa520" }}
+        >
+          <BiLock color="#e0e0e0" size={48} />
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="Q1/2023"
+          dateClassName={styles.Date}
+          textClassName={styles.RoadmapText}
+          iconClassName={styles.Icon}
+          icon={<FaChartLine color="#e0e0e0" size={36} />}
+          contentArrowStyle={{ borderRight: "1vh solid  #daa520" }}
+        >
+          <BiLock color="#e0e0e0" size={48} />
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          iconClassName={styles.Icon}
+          icon={<RiStarLine color="#e0e0e0" size={36} />}
+        ></VerticalTimelineElement>
       </VerticalTimeline>
     </>
   );
