@@ -16,7 +16,7 @@ const Tokenomics = ({ className }: Props) => {
           xs={10}
           md={8}
           lg={6}
-          className={classNames(className, styles.tokenomicsTitle)}
+          className={classNames(className, styles.TokenomicsTitle)}
         >
           Tokenomics
         </Col>
@@ -25,7 +25,7 @@ const Tokenomics = ({ className }: Props) => {
         <Col>
           <Card className={classNames(className, styles.Card)}>
             <Card.Body>
-              <Card.Title className={classNames(styles.tokenomicsCardTitle)}>
+              <Card.Title className={classNames(styles.TokenomicsCardTitle)}>
                 1% Reward
               </Card.Title>
               <Card.Text>
@@ -38,7 +38,7 @@ const Tokenomics = ({ className }: Props) => {
         <Col>
           <Card className={className}>
             <Card.Body>
-              <Card.Title className={classNames(styles.tokenomicsCardTitle)}>
+              <Card.Title className={classNames(styles.TokenomicsCardTitle)}>
                 3% liquidity pool
               </Card.Title>
               <Card.Text>
@@ -51,7 +51,7 @@ const Tokenomics = ({ className }: Props) => {
         <Col>
           <Card className={className}>
             <Card.Body>
-              <Card.Title className={classNames(styles.tokenomicsCardTitle)}>
+              <Card.Title className={classNames(styles.TokenomicsCardTitle)}>
                 3% Treasury
               </Card.Title>
               <Card.Text>

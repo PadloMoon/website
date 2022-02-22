@@ -16,17 +16,17 @@ function App() {
         <a id="home" />
         <Navigation />
         <Row className="justify-content-center">
-          <Image src={logo} fluid alt="padlo logo" className={styles.logo} />
+          <Image src={logo} fluid alt="padlo logo" className={styles.Logo} />
         </Row>
         <Row>
-          <div className={styles.logoTitle}>PadloMoon</div>
+          <div className={styles.LogoTitle}>PadloMoon</div>
         </Row>
         {/* eslint-disable-next-line */}
         <a id="about" />
         <Row className="justify-content-center">
           <Col
             lg="10"
-            className={classNames(styles.about, styles.commonElement)}
+            className={classNames(styles.About, styles.CommonElement)}
           >
             <p>
               Meet Padlo, 1920´s Gangster-type gentleman, who launched token
@@ -39,10 +39,10 @@ function App() {
         </Row>
         {/* eslint-disable-next-line */}
         <a id="tokenomics" />
-        <Tokenomics className={styles.commonElement} />
+        <Tokenomics className={styles.CommonElement} />
         {/* eslint-disable-next-line */}
         <a id="roadmap" />
-        <Roadmap className={styles.commonElement} />
+        <Roadmap className={styles.CommonElement} />
       </Container>
       <Footer />
     </>

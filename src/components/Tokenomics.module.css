@@ -2,18 +2,32 @@
   margin-bottom: 1vh;
 }
 
-.tokenomicsTitle {
+.TokenomicsTitle {
   font-family: "Alata", sans-serif;
   font-size: calc(0.8em * var(--text-multiplier)) !important;
   text-align: center;
-  -webkit-text-stroke: 1px #6e6e6e;
-  text-shadow: #996515 1px 1px 4px;
   margin-bottom: 4vh;
+  font-weight: bold;
 }
 
-.tokenomicsCardTitle {
+@media (min-width: 1024px) {
+  .TokenomicsTitle {
+    -webkit-text-stroke: 1px #6e6e6e;
+    text-shadow: #996515 1px 1px 4px;
+    font-weight: normal;
+  }
+}
+
+.TokenomicsCardTitle {
   font-size: calc(0.8rem * var(--text-multiplier));
   text-align: center;
-  text-shadow: #6e6e6e 1px 1px 2px;
-  -webkit-text-stroke: 1px #996515;
+  font-weight: bold;
+}
+
+@media (min-width: 1024px) {
+  .TokenomicsCardTitle {
+    text-shadow: #6e6e6e 1px 1px 2px;
+    -webkit-text-stroke: 1px #996515;
+    font-weight: normal;
+  }
 }
