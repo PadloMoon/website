@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  reactapp_svc:
+    container_name: reactapp_svc
+    image: reactapp_svc_img
+    hostname: reactapp_svc
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: "always"
+    volumes:
+      - reactapp_volume:/reactapp
+
+volumes:
+  reactapp_volume:
