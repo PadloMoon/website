@@ -2,11 +2,11 @@ import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import styles from "./App.module.css";
 import logo from "./assets/images/Padlologo_new_transparent.png";
-import Roadmap from "./components/Roadmap";
+import Roadmap from "../components/Roadmap";
 import classNames from "classnames";
-import Tokenomics from "./components/Tokenomics";
-import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
+import Tokenomics from "../components/Tokenomics";
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 
 function App() {
   return (
