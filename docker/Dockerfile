@@ -22,7 +22,7 @@ RUN apk add --no-cache bash
 FROM debian:10.10-slim
 
 RUN apt-get update \
-    && apt-get install -y nginx openssl
+    && apt-get install -y nginx
 
 RUN rm -rf /usr/share/nginx/html/*
 COPY --from=builder /usr/src/reactapp/docker/nginx.conf /etc/nginx/nginx.conf
