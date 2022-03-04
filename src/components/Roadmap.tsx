@@ -4,8 +4,14 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
 import { Row, Col } from "react-bootstrap";
+import { BiLock, BiRocket } from "react-icons/bi";
+import { RiStarLine } from "react-icons/ri";
+import { HiCurrencyDollar, HiFire } from "react-icons/hi";
+import { AiTwotoneThunderbolt } from "react-icons/ai";
+import { FaChartLine } from "react-icons/fa";
+
+import "react-vertical-timeline-component/style.min.css";
 import styles from "./Roadmap.module.css";
 
 type Props = {
@@ -15,8 +21,12 @@ type Props = {
 const Roadmap = ({ className }: Props) => {
   return (
     <>
-      <Row className="justify-content-md-center">
-        <Col xs lg="6" className={classNames(className, styles.RoadmapTitle)}>
+      <Row className="justify-content-center">
+        <Col
+          xs={10}
+          lg={6}
+          className={classNames(className, styles.RoadmapTitle)}
+        >
           Roadmap
         </Col>
       </Row>
@@ -26,8 +36,9 @@ const Roadmap = ({ className }: Props) => {
           dateClassName={styles.Date}
           textClassName={styles.RoadmapText}
           contentArrowStyle={{ borderRight: "1vh solid  #daa520" }}
-          date="Q1/2022"
+          date="Stage 1"
           iconClassName={styles.Icon}
+          icon={<BiRocket color="#e0e0e0" size={48} />}
         >
           <ul>
             <li>
@@ -35,8 +46,15 @@ const Roadmap = ({ className }: Props) => {
                 Presale & Launch
               </span>
             </li>
+            <li>
+              <span style={{ textDecoration: "line-through" }}>
+                DEX listing
+              </span>
+            </li>
+            <li>
+              <span style={{ textDecoration: "line-through" }}>Website</span>
+            </li>
             <li>200 holders</li>
-            <li>Website</li>
             <li>
               Community building: contests, games and grass root marketing
             </li>
@@ -44,10 +62,11 @@ const Roadmap = ({ className }: Props) => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="Q2/2022"
+          date="Stage 2"
           dateClassName={styles.Date}
           textClassName={styles.RoadmapText}
           iconClassName={styles.Icon}
+          icon={<HiCurrencyDollar color="#e0e0e0" size={36} />}
           contentArrowStyle={{ borderRight: "1vh solid  #daa520" }}
         >
           <ul>
@@ -58,17 +77,48 @@ const Roadmap = ({ className }: Props) => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="Q3/2022"
+          date="Stage 3"
           dateClassName={styles.Date}
           textClassName={styles.RoadmapText}
           iconClassName={styles.Icon}
+          icon={<HiFire color="#e0e0e0" size={36} />}
           contentArrowStyle={{ borderRight: "1vh solid  #daa520" }}
         >
           <ul>
             <li>1500 holders</li>
             <li>CEX listing</li>
+            <li>
+              <BiLock color="#e0e0e0" size={48} />
+            </li>
           </ul>
         </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="Stage 4"
+          dateClassName={styles.Date}
+          textClassName={styles.RoadmapText}
+          iconClassName={styles.Icon}
+          icon={<AiTwotoneThunderbolt color="#e0e0e0" size={36} />}
+          contentArrowStyle={{ borderRight: "1vh solid  #daa520" }}
+        >
+          <BiLock color="#e0e0e0" size={48} />
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="Stage 5"
+          dateClassName={styles.Date}
+          textClassName={styles.RoadmapText}
+          iconClassName={styles.Icon}
+          icon={<FaChartLine color="#e0e0e0" size={36} />}
+          contentArrowStyle={{ borderRight: "1vh solid  #daa520" }}
+        >
+          <BiLock color="#e0e0e0" size={48} />
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          iconClassName={styles.Icon}
+          icon={<RiStarLine color="#e0e0e0" size={36} />}
+        ></VerticalTimelineElement>
       </VerticalTimeline>
     </>
   );

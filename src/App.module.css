@@ -1,8 +1,18 @@
 .Container {
+  background: repeating-linear-gradient(
+    to right,
+    #828282,
+    #828282 30px,
+    #e0e0e0 30px,
+    #e0e0e0 60px
+  );
+  box-shadow: 0px 0px 8px 2px rgb(59, 59, 59);
   color: white;
+  height: 100%;
+  padding-bottom: 0;
 }
 
-.logo {
+.Logo {
   margin: 2vh auto;
   width: auto;
   max-width: calc(10em * var(--text-multiplier));
@@ -14,7 +24,7 @@
   }
 }
 
-.commonElement {
+.CommonElement {
   background-color: #faf9f5;
   border-radius: 10px;
   border: 2px solid #daa520;
@@ -24,7 +34,7 @@
   opacity: 0.85;
 }
 
-.logoTitle {
+.LogoTitle {
   font-family: "Limelight", cursive;
   font-size: calc(1.8em * var(--text-multiplier));
   text-shadow: #daa520 0px 5px 15px;
@@ -34,12 +44,12 @@
 }
 
 @media (min-width: 768px) {
-  .logoTitle {
+  .LogoTitle {
     font-size: calc(2.5em * var(--text-multiplier));
   }
 }
 
-.about {
+.About {
   padding: 2vh;
-  margin: 13vh 0 7vh;
+  margin: 4vh 0 7vh;
 }

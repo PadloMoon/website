@@ -46,15 +46,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
-  /* background-image: url("./assets/images/pablo_bg.png");
-   */
-  background: repeating-linear-gradient(
-    to right,
-    #828282,
-    #828282 30px,
-    #e0e0e0 30px,
-    #e0e0e0 60px
-  );
+  width: 100%;
+  background-color: #6c7a89 !important;
 }
 
 code {

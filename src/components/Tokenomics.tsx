@@ -11,11 +11,12 @@ type Props = {
 const Tokenomics = ({ className }: Props) => {
   return (
     <>
-      <Row className="justify-content-md-center">
+      <Row className="justify-content-center">
         <Col
-          xs
-          lg="6"
-          className={classNames(className, styles.tokenomicsTitle)}
+          xs={10}
+          md={8}
+          lg={6}
+          className={classNames(className, styles.TokenomicsTitle)}
         >
           Tokenomics
         </Col>
@@ -24,7 +25,7 @@ const Tokenomics = ({ className }: Props) => {
         <Col>
           <Card className={classNames(className, styles.Card)}>
             <Card.Body>
-              <Card.Title className={classNames(styles.tokenomicsCardTitle)}>
+              <Card.Title className={classNames(styles.TokenomicsCardTitle)}>
                 1% Reward
               </Card.Title>
               <Card.Text>
@@ -37,7 +38,7 @@ const Tokenomics = ({ className }: Props) => {
         <Col>
           <Card className={className}>
             <Card.Body>
-              <Card.Title className={classNames(styles.tokenomicsCardTitle)}>
+              <Card.Title className={classNames(styles.TokenomicsCardTitle)}>
                 3% liquidity pool
               </Card.Title>
               <Card.Text>
@@ -50,12 +51,13 @@ const Tokenomics = ({ className }: Props) => {
         <Col>
           <Card className={className}>
             <Card.Body>
-              <Card.Title className={classNames(styles.tokenomicsCardTitle)}>
+              <Card.Title className={classNames(styles.TokenomicsCardTitle)}>
                 3% Treasury
               </Card.Title>
               <Card.Text>
-                We need some funds, like marketing to reach the moon. We're
-                always looking for ways to grow community.
+                We need some funds, for example for marketing to get more
+                friends for Padlo. We're always looking for ways to grow this
+                great community!
               </Card.Text>
             </Card.Body>
           </Card>

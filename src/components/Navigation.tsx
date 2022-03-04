@@ -1,8 +1,11 @@
+import classNames from "classnames";
 import * as React from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { Telegram, Twitter } from "react-bootstrap-icons";
 import styles from "./Navigation.module.css";
+// @ts-ignore
+import pdf from "../assets/PadloMoon_litepaper.pdf";
 
 const Navigation = () => {
   return (
@@ -32,10 +35,18 @@ const Navigation = () => {
               Roadmap
             </Nav.Link>
             <Nav.Link
+              href={pdf}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.NavbarLink}
+            >
+              Litepaper
+            </Nav.Link>
+            <Nav.Link
               href="https://t.me/PADLOmoon"
               target="_blank"
               rel="noreferrer"
-              className={styles.NavbarLink}
+              className={classNames(styles.NavbarLink, styles.NavbarIcon)}
             >
               <Telegram className={styles.Icon} />
             </Nav.Link>
@@ -43,12 +54,9 @@ const Navigation = () => {
               href="https://twitter.com/PadloMoon"
               target="_blank"
               rel="noreferrer"
-              className={styles.NavbarLink}
+              className={classNames(styles.NavbarLink, styles.NavbarIcon)}
             >
               <Twitter className={styles.Icon} />
-            </Nav.Link>
-            <Nav.Link as={Link} to="/earn" className={styles.NavbarLink}>
-              Earn
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

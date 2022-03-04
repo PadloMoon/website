@@ -2,26 +2,33 @@
   font-family: "Alata", sans-serif;
   font-size: calc(0.8em * var(--text-multiplier)) !important;
   text-align: center;
-  -webkit-text-stroke: 1px #6e6e6e;
-  text-shadow: #996515 1px 1px 4px;
   margin-top: 5vh;
+  font-weight: bold;
+}
+
+@media (min-width: 1024px) {
+  .RoadmapTitle {
+    -webkit-text-stroke: 1px #6e6e6e;
+    text-shadow: #996515 1px 1px 4px;
+    font-weight: normal;
+  }
 }
 
 .Date {
   font-family: "Alata", sans-serif;
   background-color: white;
-  font-size: calc(0.6rem * var(--text-multiplier)) !important;
+  font-size: calc(0.45rem * var(--text-multiplier)) !important;
   width: auto !important;
   padding: 1vh !important;
   border-radius: 10px;
   border: 2px solid #daa520;
   color: #daa520;
   opacity: 0.85 !important;
+  white-space: nowrap;
 }
 
 .VerticalTimeLine {
   padding-top: 5em !important;
-  margin-bottom: 30vh;
 }
 
 .RoadmapText {
@@ -40,5 +47,13 @@
 }
 
 .Icon {
-  background: #daa520;
+  background: #6c7a89;
+  box-shadow: 0 0 0 4px #daa520;
+}
+
+.Icon > svg {
+  width: calc(0.6em * var(--text-multiplier)) !important;
+  height: calc(0.6em * var(--text-multiplier)) !important;
+  margin-left: calc(-0.3em * var(--text-multiplier)) !important;
+  margin-top: calc(-0.3em * var(--text-multiplier)) !important;
 }

@@ -1,0 +1,11 @@
+*/node_modules/
+*/build/
+*/.git/
+
+.gitignore
+Dockerfile
+.editorconfig
+tslint.json
+tsconfig.json
+README.md
+

@@ -15,39 +15,34 @@ function App() {
         {/* eslint-disable-next-line */}
         <a id="home" />
         <Navigation />
-        <Row className="justify-content-md-center">
-          <Image src={logo} fluid alt="padlo logo" className={styles.logo} />
+        <Row className="justify-content-center">
+          <Image src={logo} fluid alt="padlo logo" className={styles.Logo} />
         </Row>
         <Row>
-          <div className={styles.logoTitle}>PadloMoon</div>
+          <div className={styles.LogoTitle}>PadloMoon</div>
         </Row>
         {/* eslint-disable-next-line */}
         <a id="about" />
-        <Row>
-          <Col className={classNames(styles.about, styles.commonElement)}>
+        <Row className="justify-content-center">
+          <Col
+            lg="10"
+            className={classNames(styles.About, styles.CommonElement)}
+          >
             <p>
-              Meet Padlo, the most feared gangster in 1920's. His token was the
-              first ever launched from CrowFi launchpad! Later on you will be
-              introduced with his amazing NFT collection and perhaps few other
-              great utilities as well!
-            </p>
-            <p>
-              Padlo was found when team of individuals wanted to launch first
-              token from CrowFi's launchpad. Time was limited, but we held a
-              short presale and launched PadloMoon successfully. We didn't had
-              any actual plans before launch but when launch went well with over
-              2200% gains in the first 24h we realized that we have a gem in our
-              hands. Now we're working hard to bring our community more things
-              to enjoy while traveling to moon!
+              Meet Padlo, 1920´s Gangster-type gentleman, who launched token
+              named after him, first ever on Crow Finance launchpad. Padlo
+              rewards his holders with PDM token from every transaction. Later
+              on you will be introduced with his amazing NFT collection and
+              perhaps few other great utilities as well!
             </p>
           </Col>
         </Row>
         {/* eslint-disable-next-line */}
         <a id="tokenomics" />
-        <Tokenomics className={styles.commonElement} />
+        <Tokenomics className={styles.CommonElement} />
         {/* eslint-disable-next-line */}
         <a id="roadmap" />
-        <Roadmap className={styles.commonElement} />
+        <Roadmap className={styles.CommonElement} />
       </Container>
       <Footer />
     </>

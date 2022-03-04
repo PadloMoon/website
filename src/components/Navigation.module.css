@@ -17,6 +17,10 @@
   }
 }
 
+.NavbarIcon {
+  width: 70px;
+}
+
 .Icon {
   margin: 0 2vw 0 2vw;
 }
