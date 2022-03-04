@@ -22,17 +22,17 @@ const Navigation = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" navbarScroll>
-            <Nav.Link href="#home" className={styles.NavbarLink}>
+            <Nav.Link href="/#home" className={styles.NavbarLink}>
               Home
             </Nav.Link>
-            <Nav.Link href="#about" className={styles.NavbarLink}>
-              About
-            </Nav.Link>
-            <Nav.Link href="#tokenomics" className={styles.NavbarLink}>
+            <Nav.Link href="/#tokenomics" className={styles.NavbarLink}>
               Tokenomics
             </Nav.Link>
-            <Nav.Link href="#roadmap" className={styles.NavbarLink}>
+            <Nav.Link href="/#roadmap" className={styles.NavbarLink}>
               Roadmap
+            </Nav.Link>
+            <Nav.Link as={Link} to="/poker" className={styles.NavbarLink}>
+              Poker
             </Nav.Link>
             <Nav.Link
               href={pdf}

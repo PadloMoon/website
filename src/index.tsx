@@ -4,14 +4,14 @@ import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import App from "./App";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Earn from "./routes/earn";
+import Poker from "./routes/Poker";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/earn" element={<Earn />} />
+        <Route path="/earn" element={<Poker />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

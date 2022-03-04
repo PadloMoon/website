@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const Earn = () => {
+const Poker = () => {
   return (
     <div>
       <h1>Earn</h1>
@@ -9,4 +9,4 @@ const Earn = () => {
   );
 };
 
-export default Earn;
+export default Poker;
