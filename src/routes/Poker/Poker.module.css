@@ -1,0 +1,11 @@
+.PokerLogo {
+  margin: 2vh auto;
+  width: auto;
+  max-width: calc(10em * var(--text-multiplier));
+}
+
+@media (min-width: 1080px) {
+  .PokerLogo {
+    max-width: 50%;
+  }
+}

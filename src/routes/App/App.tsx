@@ -1,17 +1,19 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import styles from "./App.module.css";
-import logo from "./assets/images/Padlologo_new_transparent.png";
-import Roadmap from "./components/Roadmap";
+import Roadmap from "../../components/Roadmap";
 import classNames from "classnames";
-import Tokenomics from "./components/Tokenomics";
-import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
+import Tokenomics from "../../components/Tokenomics";
+import Navigation from "../../components/Navigation";
+import Footer from "../../components/Footer";
+
+import logo from "../../assets/images/Padlologo_new_transparent.png";
+import mainStyles from "../../styles/main.module.css";
+import styles from "./App.module.css";
 
 function App() {
   return (
     <>
-      <Container fluid="lg" className={styles.Container}>
+      <Container fluid="lg" className={mainStyles.Container}>
         {/* eslint-disable-next-line */}
         <a id="home" />
         <Navigation />
@@ -26,7 +28,7 @@ function App() {
         <Row className="justify-content-center">
           <Col
             lg="10"
-            className={classNames(styles.About, styles.CommonElement)}
+            className={classNames(styles.About, mainStyles.CommonElement)}
           >
             <p>
               Meet Padlo, 1920´s Gangster-type gentleman, who launched token
@@ -39,10 +41,10 @@ function App() {
         </Row>
         {/* eslint-disable-next-line */}
         <a id="tokenomics" />
-        <Tokenomics className={styles.CommonElement} />
+        <Tokenomics className={mainStyles.CommonElement} />
         {/* eslint-disable-next-line */}
         <a id="roadmap" />
-        <Roadmap className={styles.CommonElement} />
+        <Roadmap className={mainStyles.CommonElement} />
       </Container>
       <Footer />
     </>

@@ -1,17 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import "./styles/index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import App from "./App";
+import App from "./routes/App/App";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Poker from "./routes/Poker";
+import Poker from "./routes/Poker/Poker";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/earn" element={<Poker />} />
+        <Route path="/poker" element={<Poker />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
