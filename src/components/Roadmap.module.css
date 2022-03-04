@@ -24,6 +24,7 @@
   border: 2px solid #daa520;
   color: #daa520;
   opacity: 0.85 !important;
+  white-space: nowrap;
 }
 
 .VerticalTimeLine {

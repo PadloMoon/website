@@ -3,6 +3,8 @@ import * as React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { Telegram, Twitter } from "react-bootstrap-icons";
 import styles from "./Navigation.module.css";
+// @ts-ignore
+import pdf from "../assets/PadloMoon_litepaper.pdf";
 
 const Navigation = () => {
   return (
@@ -32,6 +34,14 @@ const Navigation = () => {
               Roadmap
             </Nav.Link>
             <Nav.Link
+              href={pdf}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.NavbarLink}
+            >
+              Litepaper
+            </Nav.Link>
+            <Nav.Link
               href="https://t.me/PADLOmoon"
               target="_blank"
               rel="noreferrer"
@@ -47,13 +57,6 @@ const Navigation = () => {
             >
               <Twitter className={styles.Icon} />
             </Nav.Link>
-            {/* <Nav.Link
-              href="https://www.reddit.com/user/PadloMoon"
-              target="_blank"
-              className={styles.NavbarLink}
-            >
-              Reddit
-            </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

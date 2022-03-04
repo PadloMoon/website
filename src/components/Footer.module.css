@@ -1,7 +1,7 @@
 .Footer {
   background-color: #6e6e6e;
   border-top: 0.3vh solid #daa520;
-  height: calc(3vh * var(--text-multiplier));
+  height: calc(5vh * var(--text-multiplier));
   font-family: "Alata", sans-serif;
   color: #daa520;
   font-size: calc(0.3em * var(--text-multiplier));

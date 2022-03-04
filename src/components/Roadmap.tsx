@@ -36,7 +36,7 @@ const Roadmap = ({ className }: Props) => {
           dateClassName={styles.Date}
           textClassName={styles.RoadmapText}
           contentArrowStyle={{ borderRight: "1vh solid  #daa520" }}
-          date="Q1/2022"
+          date="Stage 1"
           iconClassName={styles.Icon}
           icon={<BiRocket color="#e0e0e0" size={48} />}
         >
@@ -51,8 +51,10 @@ const Roadmap = ({ className }: Props) => {
                 DEX listing
               </span>
             </li>
+            <li>
+              <span style={{ textDecoration: "line-through" }}>Website</span>
+            </li>
             <li>200 holders</li>
-            <li>Website</li>
             <li>
               Community building: contests, games and grass root marketing
             </li>
@@ -60,7 +62,7 @@ const Roadmap = ({ className }: Props) => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="Q2/2022"
+          date="Stage 2"
           dateClassName={styles.Date}
           textClassName={styles.RoadmapText}
           iconClassName={styles.Icon}
@@ -75,7 +77,7 @@ const Roadmap = ({ className }: Props) => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="Q3/2022"
+          date="Stage 3"
           dateClassName={styles.Date}
           textClassName={styles.RoadmapText}
           iconClassName={styles.Icon}
@@ -92,7 +94,7 @@ const Roadmap = ({ className }: Props) => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="Q4/2022"
+          date="Stage 4"
           dateClassName={styles.Date}
           textClassName={styles.RoadmapText}
           iconClassName={styles.Icon}
@@ -103,7 +105,7 @@ const Roadmap = ({ className }: Props) => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="Q1/2023"
+          date="Stage 5"
           dateClassName={styles.Date}
           textClassName={styles.RoadmapText}
           iconClassName={styles.Icon}
