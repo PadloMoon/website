@@ -30,5 +30,6 @@ export const configVars = {
     address: "0x9D5aDE1E4dd84E3e0818542Bf37f24F22648d946",
   },
   devWallet: "0x73926C8859D454ED6b014f5741D0b052208d2710",
-  pokerRegistrationFee: 1,
+  actual_devWallet: "0xbad10b866C88Fd0752691e98AF3eCBa3E61CabF4",
+  pokerRegistrationFee: 60,
 };
