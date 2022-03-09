@@ -1,4 +1,5 @@
 .Container {
+  position: relative;
   background: repeating-linear-gradient(
     to right,
     #828282,

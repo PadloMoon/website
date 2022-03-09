@@ -1,12 +1,12 @@
 .Logo {
   margin: 2vh auto;
   width: auto;
-  max-width: calc(10em * var(--text-multiplier));
+  max-width: calc(10em * var(--text-multiplier)) !important;
 }
 
 @media (min-width: 1080px) {
   .Logo {
-    max-width: 50%;
+    max-width: 50% !important;
   }
 }
 

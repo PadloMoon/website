@@ -1,16 +1,17 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import Roadmap from "../../components/Roadmap";
+import Roadmap from "../../components/Roadmap/Roadmap";
 import classNames from "classnames";
-import Tokenomics from "../../components/Tokenomics";
-import Navigation from "../../components/Navigation";
-import Footer from "../../components/Footer";
+import Tokenomics from "../../components/Tokenomics/Tokenomics";
+import Navigation from "../../components/Navigation/Navigation";
+import Footer from "../../components/Footer/Footer";
 
 import logo from "../../assets/images/Padlologo_new_transparent.png";
 import mainStyles from "../../styles/main.module.css";
 import styles from "./App.module.css";
 
 function App() {
+  console.log("styles", styles);
   return (
     <>
       <Container fluid="lg" className={mainStyles.Container}>
@@ -18,7 +19,7 @@ function App() {
         <a id="home" />
         <Navigation />
         <Row className="justify-content-center">
-          <Image src={logo} fluid alt="padlo logo" className={styles.Logo} />
+          <Image src={logo} alt="padlo logo" className={styles.Logo} />
         </Row>
         <Row>
           <div className={styles.LogoTitle}>PadloMoon</div>

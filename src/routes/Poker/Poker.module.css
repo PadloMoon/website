@@ -1,11 +1,66 @@
 .PokerLogo {
   margin: 2vh auto;
   width: auto;
-  max-width: calc(10em * var(--text-multiplier));
+  max-width: calc(12em * var(--text-multiplier));
 }
 
 @media (min-width: 1080px) {
   .PokerLogo {
-    max-width: 50%;
+    max-width: 80%;
   }
+}
+
+.PokerLogoTitle {
+  font-family: "Limelight", cursive;
+  font-size: calc(1.3em * var(--text-multiplier));
+  text-shadow: #daa520 0px 5px 15px;
+  text-align: center;
+  margin: 1em auto;
+  -webkit-text-stroke: 1px #6e6e6e;
+}
+
+@media (min-width: 768px) {
+  .LogoTitle {
+    font-size: calc(1.5em * var(--text-multiplier));
+  }
+}
+
+.PokerInfoContainer {
+  margin: calc(0.5em * var(--text-multiplier)) auto;
+  padding: 0.5em;
+}
+
+.PokerTitle {
+  font-size: calc(0.5em * var(--text-multiplier));
+}
+
+.Calendar {
+  margin: calc(0.5em * var(--text-multiplier)) auto 3em;
+  padding: 0.3em;
+}
+
+.CalendarTitle {
+  font-size: calc(0.35em * var(--text-multiplier));
+}
+
+.ConnectWalletButton {
+  background-color: #faf9f5 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  border: 2px solid #daa520 !important;
+  color: #daa520 !important;
+  font-weight: bold !important;
+  position: absolute;
+  right: 0.6em;
+  top: calc(1.4em * var(--text-multiplier));
+}
+
+.ConnectWalletButton:focus {
+  background-color: #daa520 !important;
+  color: #faf9f5 !important;
+}
+
+.ConnectWalletButton:hover {
+  background-color: #daa520 !important;
+  color: #faf9f5 !important;
 }

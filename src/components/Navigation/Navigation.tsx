@@ -5,7 +5,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import { Telegram, Twitter } from "react-bootstrap-icons";
 import styles from "./Navigation.module.css";
 // @ts-ignore
-import pdf from "../assets/PadloMoon_litepaper.pdf";
+import pdf from "../../assets/PadloMoon_litepaper.pdf";
 
 const Navigation = () => {
   return (
@@ -32,7 +32,7 @@ const Navigation = () => {
               Roadmap
             </Nav.Link>
             <Nav.Link as={Link} to="/poker" className={styles.NavbarLink}>
-              Poker
+              Program-X
             </Nav.Link>
             <Nav.Link
               href={pdf}
