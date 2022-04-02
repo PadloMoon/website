@@ -1,5 +1,6 @@
 import { ethers } from "ethers";
 
+// walletSlice
 export interface WalletState {
   refreshing: IRefreshing;
   wallet: IWallet;
@@ -88,3 +89,10 @@ export const defaultQueryResults: IQueryResults = {
   padloBalance: 0,
   lastTxHash: "",
 };
+
+// transactionSlice
+
+export interface TransactionState {
+  processing: boolean;
+  transaction: string | null;
+}

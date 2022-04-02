@@ -42,25 +42,3 @@
 .CalendarTitle {
   font-size: calc(0.35em * var(--text-multiplier));
 }
-
-.ConnectWalletButton {
-  background-color: #faf9f5 !important;
-  box-shadow: none !important;
-  outline: none !important;
-  border: 2px solid #daa520 !important;
-  color: #daa520 !important;
-  font-weight: bold !important;
-  position: absolute;
-  right: 0.6em;
-  top: calc(1.4em * var(--text-multiplier));
-}
-
-.ConnectWalletButton:focus {
-  background-color: #daa520 !important;
-  color: #faf9f5 !important;
-}
-
-.ConnectWalletButton:hover {
-  background-color: #daa520 !important;
-  color: #faf9f5 !important;
-}

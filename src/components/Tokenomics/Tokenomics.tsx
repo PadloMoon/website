@@ -2,13 +2,10 @@ import * as React from "react";
 import classNames from "classnames";
 import { Row, Col, Card } from "react-bootstrap";
 
+import mainStyles from "../../styles/main.module.css";
 import styles from "./Tokenomics.module.css";
 
-type Props = {
-  className: any;
-};
-
-const Tokenomics = ({ className }: Props) => {
+const Tokenomics = () => {
   return (
     <>
       <Row className="justify-content-center">
@@ -16,14 +13,18 @@ const Tokenomics = ({ className }: Props) => {
           xs={10}
           md={8}
           lg={6}
-          className={classNames(className, styles.TokenomicsTitle)}
+          className={classNames(
+            mainStyles.CommonElement,
+            mainStyles.Title,
+            styles.TokenomicsTitle
+          )}
         >
           Tokenomics
         </Col>
       </Row>
       <Row>
         <Col>
-          <Card className={classNames(className, styles.Card)}>
+          <Card className={classNames(mainStyles.CommonElement, styles.Card)}>
             <Card.Body>
               <Card.Title className={classNames(styles.TokenomicsCardTitle)}>
                 1% Reward
@@ -36,7 +37,7 @@ const Tokenomics = ({ className }: Props) => {
           </Card>
         </Col>
         <Col>
-          <Card className={className}>
+          <Card className={mainStyles.CommonElement}>
             <Card.Body>
               <Card.Title className={classNames(styles.TokenomicsCardTitle)}>
                 3% liquidity pool
@@ -49,7 +50,7 @@ const Tokenomics = ({ className }: Props) => {
           </Card>
         </Col>
         <Col>
-          <Card className={className}>
+          <Card className={mainStyles.CommonElement}>
             <Card.Body>
               <Card.Title className={classNames(styles.TokenomicsCardTitle)}>
                 3% Treasury

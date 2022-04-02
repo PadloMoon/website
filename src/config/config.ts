@@ -15,6 +15,7 @@ export const configVars = {
   },
   rpcNetwork: {
     rpcUrl: "https://cronos.crowfi.app",
+    // rpcUrl: "https://evm.cronos.org/",
     chainId: 25,
     chainIdHex: "0x19",
     chainName: "Cronos Mainnet Beta",
@@ -24,12 +25,12 @@ export const configVars = {
       symbol: "CRO",
       decimals: 18,
     },
-    blockExplorerUrl: "https://cronos.crypto.org/explorer/",
+    blockExplorerUrl: "https://cronoscan.com/",
   },
   padlo: {
     address: "0x9D5aDE1E4dd84E3e0818542Bf37f24F22648d946",
   },
-  devWallet: "0x73926C8859D454ED6b014f5741D0b052208d2710",
-  actual_devWallet: "0xbad10b866C88Fd0752691e98AF3eCBa3E61CabF4",
-  pokerRegistrationFee: 60,
+  test_devWallet: "0x73926C8859D454ED6b014f5741D0b052208d2710",
+  devWallet: "0xbad10b866C88Fd0752691e98AF3eCBa3E61CabF4",
+  pokerRegistrationFee: 1,
 };

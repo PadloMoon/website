@@ -42,6 +42,7 @@ export const connect = async (): Promise<IWallet> => {
       await utils.delay(2000);
       return defaultWallet;
     }
+
     const accounts = await window.ethereum.request({
       method: "eth_requestAccounts",
     });
@@ -67,6 +68,7 @@ export const connect = async (): Promise<IWallet> => {
       ),
     };
   } catch (e) {
+    console.log("error", e);
     window.alert(e);
     return defaultWallet;
   }

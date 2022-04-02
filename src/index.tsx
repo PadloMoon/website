@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import { store } from "./slices/store";
 import App from "./routes/App/App";
 import Poker from "./routes/Poker/Poker";
+import PokerRegistration from "./routes/PokerRegistration/PokerRegistration";
 
 import "./styles/index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -17,6 +18,7 @@ ReactDOM.render(
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/poker" element={<Poker />} />
+          <Route path="/poker-registration" element={<PokerRegistration />} />
         </Routes>
       </BrowserRouter>
     </Provider>

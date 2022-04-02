@@ -15,10 +15,84 @@
 
 .CommonElement {
   background-color: #faf9f5;
-  border-radius: 10px;
-  border: 2px solid #daa520;
+  border-radius: 10px !important;
+  border: 2px solid #daa520 !important;
   color: #daa520;
   font-family: "Patrick Hand", cursive;
-  font-size: calc(0.7em * var(--text-multiplier));
+  font-size: calc(0.5em * var(--text-multiplier)) !important;
   opacity: 0.85;
+}
+
+.Title {
+  font-family: "Alata", sans-serif;
+  font-size: calc(0.8em * var(--text-multiplier)) !important;
+  text-align: center;
+  margin-top: 5vh !important;
+  font-weight: bold;
+}
+
+@media (min-width: 1024px) {
+  .Title {
+    -webkit-text-stroke: 1px #6e6e6e;
+    text-shadow: #996515 1px 1px 4px;
+    font-weight: normal;
+  }
+}
+
+.Button {
+  background-color: #daa520 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  color: #faf9f5 !important;
+  font-weight: bold !important;
+  opacity: 1 !important;
+}
+
+.Button:focus {
+  background-color: #daa520 !important;
+  color: #faf9f5 !important;
+}
+
+.Button:hover {
+  background-color: #daa520 !important;
+  color: #faf9f5 !important;
+}
+
+.Button:disabled {
+  opacity: 0.5 !important;
+}
+
+.ButtonSecondary {
+  background-color: #faf9f5 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  border: 2px solid #daa520 !important;
+  color: #daa520 !important;
+  font-weight: bold !important;
+}
+
+.ButtonSecondary:focus {
+  background-color: #daa520 !important;
+  color: #faf9f5 !important;
+}
+
+.ButtonSecondary:hover {
+  background-color: #daa520 !important;
+  color: #faf9f5 !important;
+}
+
+.Registration {
+  margin-bottom: calc(2em * var(--text-multiplier));
+}
+
+.Link {
+  color: #996515;
+}
+
+.Link:visited {
+  color: #8d721e;
+}
+
+.Link:active {
+  color: #b8860b;
 }

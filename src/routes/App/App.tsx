@@ -10,7 +10,7 @@ import logo from "../../assets/images/Padlologo_new_transparent.png";
 import mainStyles from "../../styles/main.module.css";
 import styles from "./App.module.css";
 
-function App() {
+const App = () => {
   console.log("styles", styles);
   return (
     <>
@@ -42,14 +42,14 @@ function App() {
         </Row>
         {/* eslint-disable-next-line */}
         <a id="tokenomics" />
-        <Tokenomics className={mainStyles.CommonElement} />
+        <Tokenomics />
         {/* eslint-disable-next-line */}
         <a id="roadmap" />
-        <Roadmap className={mainStyles.CommonElement} />
+        <Roadmap />
       </Container>
       <Footer />
     </>
   );
-}
+};
 
 export default App;

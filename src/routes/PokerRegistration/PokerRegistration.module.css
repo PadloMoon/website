@@ -1,0 +1,21 @@
+.ConnectWalletButton {
+  margin-top: calc(0.2em * var(--text-multiplier));
+}
+
+.Registration {
+  font-size: calc(0.5em * var(--text-multiplier)) !important;
+  opacity: 1;
+  margin: calc(0.5em * var(--text-multiplier)) 0
+    calc(4em * var(--text-multiplier)) !important;
+  padding: 10px;
+}
+
+.Input {
+  font-size: calc(0.2em * var(--text-multiplier)) !important;
+}
+
+.SubmitButton {
+  width: 300px;
+  font-size: calc(0.2em * var(--text-multiplier)) !important;
+  margin: calc(0.2em * var(--text-multiplier)) 0;
+}

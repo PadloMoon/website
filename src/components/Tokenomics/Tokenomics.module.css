@@ -3,23 +3,11 @@
 }
 
 .TokenomicsTitle {
-  font-family: "Alata", sans-serif;
-  font-size: calc(0.8em * var(--text-multiplier)) !important;
-  text-align: center;
   margin-bottom: 4vh;
-  font-weight: bold;
-}
-
-@media (min-width: 1024px) {
-  .TokenomicsTitle {
-    -webkit-text-stroke: 1px #6e6e6e;
-    text-shadow: #996515 1px 1px 4px;
-    font-weight: normal;
-  }
 }
 
 .TokenomicsCardTitle {
-  font-size: calc(0.8rem * var(--text-multiplier));
+  font-size: calc(0.8rem * var(--text-multiplier)) !important;
   text-align: center;
   font-weight: bold;
 }

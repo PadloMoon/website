@@ -12,20 +12,21 @@ import { AiTwotoneThunderbolt } from "react-icons/ai";
 import { FaChartLine } from "react-icons/fa";
 
 import "react-vertical-timeline-component/style.min.css";
+import mainStyles from "../../styles/main.module.css";
 import styles from "./Roadmap.module.css";
 
-type Props = {
-  className: any;
-};
-
-const Roadmap = ({ className }: Props) => {
+const Roadmap = () => {
   return (
     <>
       <Row className="justify-content-center">
         <Col
           xs={10}
           lg={6}
-          className={classNames(className, styles.RoadmapTitle)}
+          className={classNames(
+            mainStyles.CommonElement,
+            mainStyles.Title,
+            styles.RoadmapTitle
+          )}
         >
           Roadmap
         </Col>

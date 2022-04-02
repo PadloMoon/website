@@ -1,88 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import classNames from "classnames";
-import { Button, Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import Footer from "../../components/Footer/Footer";
 import Navigation from "../../components/Navigation/Navigation";
-import WalletConnect from "../../components/WalletConnect/WalletConnect";
 
 import PokerCollab from "../../assets/images/padlo_poker_programx.png";
 
 import mainStyles from "../../styles/main.module.css";
 import styles from "./Poker.module.css";
-import { useAppDispatch, useAppSelector } from "../../slices/hooks";
-import { setRefreshing, updateWallet } from "../../slices/walletSlice";
-import { defaultWallet } from "../../slices/interfaces";
-import { wait } from "../../utils/utils";
-import { payWithMetamask } from "../../utils/transactions";
-
-type WalletState = "connected" | "loading" | "disconnected";
+import { Link } from "react-router-dom";
 
 const Poker = () => {
-  const [show, setShow] = useState(false);
-
-  const dispatch = useAppDispatch();
-  const refreshing = useAppSelector((state) => state.wallet.refreshing);
-  const wallet = useAppSelector((state) => state.wallet.wallet);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
-  const disconnect = async () => {
-    dispatch(setRefreshing({ status: true, message: "Disconnecting" }));
-    dispatch(updateWallet(defaultWallet));
-    await wait(1000);
-    dispatch(setRefreshing({ status: false, message: "Completed" }));
-  };
-
-  const getWalletState = (): WalletState => {
-    if (refreshing.status) {
-      return "loading";
-    }
-    if (wallet.address.length) {
-      return "connected";
-    }
-    return "disconnected";
-  };
-
-  const getWalletButtonTitle = (state: WalletState): string => {
-    switch (state) {
-      case "loading":
-        return refreshing.message;
-      case "connected":
-        return "Disconnect";
-      case "disconnected":
-        return "Connect wallet";
-      default:
-        return "Connect wallet";
-    }
-  };
-
   return (
     <>
       <Container fluid="lg" className={mainStyles.Container}>
         <Navigation />
-        {/* <Row>
-          <Col>
-            <Button
-              disabled={refreshing.status}
-              size="lg"
-              className={styles.ConnectWalletButton}
-              onClick={
-                getWalletState() !== "connected" ? handleShow : disconnect
-              }
-              active
-            >
-              {getWalletButtonTitle(getWalletState())}
-            </Button>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <Button size="lg" onClick={() => payWithMetamask(wallet.address)}>
-              Pay
-            </Button>
-          </Col>
-        </Row> */}
         <Row className="justify-content-center">
           <Col md="10">
             <div
@@ -107,10 +39,10 @@ const Poker = () => {
             </div>
           </Col>
         </Row>
-        <Row>
+        {/* <Row>
           <h1 className={styles.PokerLogoTitle}>Coming up next!</h1>
           <Image src={PokerCollab} className={styles.PokerLogo} />
-        </Row>
+        </Row> */}
         <Row className="justify-content-center">
           <Col md="10">
             <div
@@ -121,11 +53,19 @@ const Poker = () => {
                 <li>25.2. PadloMoon Poker Tournament #1</li>
                 <li>5.3. PadloMoon x Crows Club</li>
                 <li>12.3. PadloMoon x CroTrend x Crows Club x The Cronicle</li>
+                <li>
+                  18.3. PadloMoon x Boonk Gang x Crypto Investors x Crows Club
+                </li>
+                <li>26.3. PadloMoon x Kronos x Crows Club</li>
               </ul>
             </div>
           </Col>
         </Row>
-        <WalletConnect show={show} handleClose={handleClose} />
+        {/* <Row>
+          <Link to="/poker-registration" className={mainStyles.Link}>
+            Register for next tournament!
+          </Link>
+        </Row> */}
       </Container>
       <Footer />
     </>
