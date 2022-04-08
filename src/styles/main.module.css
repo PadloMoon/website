@@ -19,7 +19,7 @@
   border: 2px solid #daa520 !important;
   color: #daa520;
   font-family: "Patrick Hand", cursive;
-  font-size: calc(0.5em * var(--text-multiplier)) !important;
+  font-size: calc(0.6em * var(--text-multiplier)) !important;
   opacity: 0.85;
 }
 

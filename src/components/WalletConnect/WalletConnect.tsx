@@ -94,7 +94,7 @@ const WalletConnect = (props: Props) => {
             <Card.Text className={styles.WalletName}>Metamask</Card.Text>
           </Card.Body>
         </Card>
-        <Card className={styles.card}>
+        {/* <Card className={styles.card}>
           <Card.Img
             variant="top"
             className={classNames(styles.WalletconnectLogo, styles.WalletLogo)}
@@ -117,7 +117,7 @@ const WalletConnect = (props: Props) => {
               Crypto.com DefiWallet
             </Card.Text>
           </Card.Body>
-        </Card>
+        </Card> */}
       </Modal.Body>
     </Modal>
   );

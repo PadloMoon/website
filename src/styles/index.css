@@ -4,37 +4,49 @@
 
 @media (min-width: 320px) {
   :root {
-    --text-multiplier: 2;
+    --text-multiplier: 1.7;
   }
 }
 
 @media (min-width: 480px) {
   :root {
-    --text-multiplier: 2.5;
+    --text-multiplier: 2;
   }
 }
 
 @media (min-width: 768px) {
   :root {
-    --text-multiplier: 3;
+    --text-multiplier: 2.2;
   }
 }
 
 @media (min-width: 1024px) {
   :root {
-    --text-multiplier: 3;
+    --text-multiplier: 2.5;
   }
 }
 
 @media (min-width: 1200px) {
   :root {
-    --text-multiplier: 4;
+    --text-multiplier: 2.8;
   }
 }
 
 @media (min-width: 1920px) {
   :root {
-    --text-multiplier: 5;
+    --text-multiplier: 3;
+  }
+}
+
+@media (min-width: 2560px) {
+  :root {
+    --text-multiplier: 3.5;
+  }
+}
+
+@media (min-width: 3840px) {
+  :root {
+    --text-multiplier: 4;
   }
 }
 
