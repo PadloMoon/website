@@ -17,5 +17,10 @@ jobs:
           script: |
             rm -r website
             git clone git@github.com:PadloMoon/website.git
+            cp secrets/padlo/.mainenv website/.env
+            cp secrets/padlo/.frontendenv website/frontend/.env
+            cp secrets/padlo/.backendenv website/backend/.env
             cd website
+            docker-compose build
+            docker-compose down && docker-compose up -d
             echo "Deployment success"
