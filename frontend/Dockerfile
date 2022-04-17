@@ -9,6 +9,7 @@ RUN npm ci --silent
 RUN npm install react-scripts@3.4.1 -g --silent
 
 COPY ./ ./
+ENV GENERATE_SOURCEMAP false
 RUN npm run build
 
 FROM nginx:stable-alpine
