@@ -1,19 +1,39 @@
-version: "3"
+version: "3.7"
 
 services:
-  reactapp_svc:
-    container_name: reactapp_svc
-    image: reactapp_svc_img
-    hostname: reactapp_svc
+  frontend:
+    container_name: frontend
     build:
-      context: .
-      dockerfile: docker/Dockerfile
+      context: frontend/.
+      dockerfile: Dockerfile
     ports:
-      - "80:80"
-      - "443:443"
-    restart: "always"
+      - "1337:80"
+  backend:
+    container_name: backend
+    restart: always
+    env_file:
+      - .env
+    build:
+      context: backend/.
+      dockerfile: Dockerfile
+    depends_on:
+      - postgres
+    ports:
+      - "${PORT}:${PORT}"
+      - "9229:9229"
+    command: node dist/src/index.js
+
+  postgres:
+    image: postgres:13.5
+    restart: always
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSRGRES_DB=mydb
     volumes:
-      - reactapp_volume:/reactapp
+      - postgres:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
 
 volumes:
-  reactapp_volume:
+  postgres:

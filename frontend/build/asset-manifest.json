@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cb37785d.chunk.css",
+    "main.js": "/static/js/main.7c76729e.chunk.js",
+    "main.js.map": "/static/js/main.7c76729e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c9fdfcfc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c9fdfcfc.js.map",
+    "static/css/2.74195455.chunk.css": "/static/css/2.74195455.chunk.css",
+    "static/js/2.418d737d.chunk.js": "/static/js/2.418d737d.chunk.js",
+    "static/js/2.418d737d.chunk.js.map": "/static/js/2.418d737d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.74195455.chunk.css.map": "/static/css/2.74195455.chunk.css.map",
+    "static/css/main.cb37785d.chunk.css.map": "/static/css/main.cb37785d.chunk.css.map",
+    "static/js/2.418d737d.chunk.js.LICENSE.txt": "/static/js/2.418d737d.chunk.js.LICENSE.txt",
+    "static/media/PadloMoon_litepaper.889dcbfd.pdf": "/static/media/PadloMoon_litepaper.889dcbfd.pdf",
+    "static/media/Padlologo_new_transparent.27530702.png": "/static/media/Padlologo_new_transparent.27530702.png",
+    "static/media/defiwallet.17357c58.png": "/static/media/defiwallet.17357c58.png",
+    "static/media/metamask-minified.386c9d10.svg": "/static/media/metamask-minified.386c9d10.svg",
+    "static/media/walletconnect-logo.dfa25e47.svg": "/static/media/walletconnect-logo.dfa25e47.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c9fdfcfc.js",
+    "static/css/2.74195455.chunk.css",
+    "static/js/2.418d737d.chunk.js",
+    "static/css/main.cb37785d.chunk.css",
+    "static/js/main.7c76729e.chunk.js"
+  ]
+}
